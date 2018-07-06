@@ -1,0 +1,50 @@
+PODS:
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - IQKeyboardManager (5.0.8)
+  - Masonry (1.1.0)
+  - OCHamcrest (7.1.0)
+  - OCMock (3.4.1)
+  - ReactiveObjC (3.1.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.2.0)
+  - IQKeyboardManager (~> 5.0.8)
+  - Masonry (~> 1.1.0)
+  - OCHamcrest (~> 7.1.0)
+  - OCMock (~> 3.4.1)
+  - ReactiveObjC (~> 3.1.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - IQKeyboardManager
+    - Masonry
+    - OCHamcrest
+    - OCMock
+    - ReactiveObjC
+
+SPEC CHECKSUMS:
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  IQKeyboardManager: 266cb7b1d11f94a3e71229d77f960f9a1b538e5b
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  OCHamcrest: f91040b9a78196a9e26bc831265dda5ab6839590
+  OCMock: 2cd0716969bab32a2283ff3a46fd26a8c8b4c5e3
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+
+PODFILE CHECKSUM: 8064ee6be0e97ef33fd75c7fc5f56a8599f9ce75
+
+COCOAPODS: 1.5.0

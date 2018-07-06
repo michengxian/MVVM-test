@@ -17,6 +17,8 @@
 - (void)setUp {
     [super setUp];
     
+    NSLog(@"开始");
+    
     // Put setup code here. This method is called before the invocation of each test method in the class.
     
     // In UI tests it is usually best to stop immediately when a failure occurs.
@@ -30,11 +32,35 @@
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+    
+    NSLog(@"结束");
 }
 
 - (void)testExample {
-    // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    NSLog(@"测试");
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    XCUIElement *nameTextField = app.textFields[@"请输入账户名"];
+    [nameTextField tap];
+    [nameTextField typeText:@"test"];
+    
+    XCUIElement *passwordTextField = app.textFields[@"请输入密码"];
+    [passwordTextField tap];
+    [passwordTextField typeText:@"123456"];
+    
+    [app.buttons[@"登录"] tap];
+    
+    XCUIElementQuery *tablesQuery = app.tables;
+    
+    [[tablesQuery.cells containingType:XCUIElementTypeStaticText identifier:@"0"].staticTexts[@"0"] tap];
+    [app.navigationBars[@"FirstView"].buttons[@"Back"] tap];
+    
+    [[tablesQuery.cells containingType:XCUIElementTypeStaticText identifier:@"1"]/*@START_MENU_TOKEN@*/.staticTexts[@"1"]/*[[".cells.staticTexts[@\"1\"]",".staticTexts[@\"1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/ tap];
+    [app.navigationBars[@"SencondViewController"].buttons[@"Back"] tap];
+    
+    [[tablesQuery.cells containingType:XCUIElementTypeStaticText identifier:@"14"].staticTexts[@"14"] tap];
+    
 }
 
 @end

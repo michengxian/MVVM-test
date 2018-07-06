@@ -7,7 +7,25 @@
 		<key>MVVM-test.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>331461F520E0804C00DC7A81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3314620D20E0804D00DC7A81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3314621820E0804D00DC7A81</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

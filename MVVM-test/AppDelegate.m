@@ -7,16 +7,22 @@
 //
 
 #import "AppDelegate.h"
+#import "AppCoordinator.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic , strong) AppCoordinator *appCoordinator;
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.appCoordinator=[[AppCoordinator alloc]init];
+    [self.appCoordinator launch];
+    
     return YES;
 }
 
